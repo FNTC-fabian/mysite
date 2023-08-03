@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent horizontal scrollbars */
+  background-image: url("/img/showcase.jpg");
+  
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #3498db;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  animation: moveRight 3s linear infinite; /* Animation applied */
+}
+
+@keyframes moveRight {
+  0% {
+      left: 0; /* Starting position */
+  }
+  100% {
+      left: calc(100% - 50px); /* Ending position (right side of the screen) */
+  }
+}
